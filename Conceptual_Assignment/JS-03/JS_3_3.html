@@ -1,0 +1,54 @@
+<!-- Part 3 : Building Interactivity with DOM Manipulation  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="myList">
+    </ul>
+
+    <button id="addItemButton">Add Item</button>
+    <button id="removeItemButton">Remove First Item</button>
+
+  <script>
+
+    function addItemToList(){
+
+        var item=prompt("Enter an item");
+        
+        if(item){
+           var List=document.getElementById("myList");
+           var listItem=document.createElement("li");
+           listItem.textContent=item;
+
+           List.appendChild(listItem);
+        }
+        else{
+          console.log("input not given");
+        }
+    }
+
+
+   function removeItemButton(){
+         var myList=document.getElementById("myList");
+         if(myList.children.length>0){
+             myList.removeChild(myList.children[0]);
+         }
+   }
+
+   var deleteItemButton=document.getElementById("removeItemButton");
+   deleteItemButton.addEventListener("click",removeItemButton);
+
+
+    var addItemButton=document.getElementById("addItemButton");
+    addItemButton.addEventListener("click",addItemToList);
+    
+  </script>  
+</body>
+</html>
