@@ -53,20 +53,17 @@ function createCommentDiv(comment) {
     // Event listener to show/hide reply input
     replyButton.addEventListener("click", () => {
         const replyInputDiv = commentDiv.querySelector(".reply-input");
-        replyInputDiv.style.display = replyInputDiv.style.display === "block" ? "none" : "block";
+        replyInputDiv.style.display = replyInputDiv.style.display === "none" ? "block" : "none";
     });
 
     // Event listener to delete comments or replies
     deleteCommentButton.addEventListener("click", () => {
-        if (comment.id === comments[0].id) {
-            // Delete the first-level comment
-            comments = comments.filter(c => c.id !== comment.id);
+        const parentComment = findParentComment(comments, comment.id);
+        if (parentComment) {
+            parentComment.replies = parentComment.replies.filter(reply => reply.id !== comment.id);
         } else {
-            // Find the parent comment and remove the reply
-            const parentComment = findParentComment(comments, comment.id);
-            if (parentComment) {
-                parentComment.replies = parentComment.replies.filter(reply => reply.id !== comment.id);
-            }
+            // If it's a top-level comment, remove it from the main comments array
+            comments = comments.filter(c => c.id !== comment.id);
         }
         renderComments(); // Render comments after deleting
     });
@@ -111,7 +108,7 @@ postCommentButton.addEventListener("click", () => {
             content: commentContent,
             replies: [],
             createdTime: new Date().toLocaleString(), // Add timestamp
-           author: "Rahul", // Set the author
+            author: "Rahul", // Set the author
             level: 0, // Set the level for top-level comments
         };
         comments.push(comment);
