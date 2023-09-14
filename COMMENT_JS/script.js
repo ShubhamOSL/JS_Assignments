@@ -5,6 +5,9 @@ const commentsContainer = document.getElementById("comments-container");
 const commentInput = document.getElementById("comment-input");
 const postCommentButton = document.getElementById("post-comment");
 
+
+
+
 // Function to render comments
 function renderComments() {
     commentsContainer.innerHTML = "";
