@@ -1,0 +1,106 @@
+# Resume Builder Project
+
+![Resume Builder](images/resume-builder-screenshot.png)
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Project Overview](#project-overview)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [How It Works](#how-it-works)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Screenshots](#screenshots)
+
+## Introduction
+Welcome to the Resume Builder project! This web-based application empowers users to create, edit, and preview their resumes effortlessly. Whether you're a job seeker, student, or professional, this tool simplifies the process of crafting a well-organized and visually appealing resume.
+
+## Project Overview
+The Resume Builder project consists of a set of HTML, CSS, and JavaScript files designed to provide a user-friendly interface for building and customizing resumes. Here's an overview of the key components:
+
+### 1. `index.html`
+This is the main page where users input their resume data. It offers sections for personal information, education, work experience, and skills. Users can generate, save, and load resumes from this page.
+
+### 2. `resume.html`
+The resume preview page, where users can view their generated resumes in a well-formatted and organized layout. It provides a professional and polished presentation of your resume.
+
+### 3. `script.js`
+The JavaScript file that powers the Resume Builder's functionality. It handles user interactions, data validation, resume generation, saving, and loading.
+
+### 4. `styles.css` and `resume.css`
+The CSS files that define the styling for the main pages and the resume preview page, respectively.
+
+## Project Structure
+Here's a breakdown of the project's structure:
+
+JS_RESUME_ASSIGNMENT/
+│
+├── index.html
+├── resume.html
+├── script.js
+│
+├── styles.css
+├── resume.css
+│
+│
+├── LICENSE
+├── README.md
+└── .gitignore
+
+
+## Features
+- **User-Friendly Interface**: The project offers an intuitive and easy-to-navigate interface for creating and managing your resume.
+
+- **Resume Generation**: Quickly generate a well-structured and professional-looking resume with just a few clicks.
+
+- **Data Persistence**: Save and load your resume data locally, allowing you to return to your work whenever you like.
+
+- **Data Editing**: Easily edit and update your resume information on the `edit.html` page.
+
+- **Responsive Design**: The application is designed to work seamlessly on both desktop and mobile devices.
+
+## Technologies Used
+The project utilizes the following technologies:
+
+- **HTML5**: The project's foundation is built on HTML5 to structure web pages.
+
+- **CSS3**: Cascading Style Sheets are used to style the web pages, making them visually appealing.
+
+- **JavaScript**: JavaScript adds interactivity and dynamic behavior to the application.
+
+## How It Works
+The Resume Builder project follows a straightforward workflow:
+
+1. **Input Data**: Users start on the `index.html` page and input their resume data, including personal information, education, work experience, and skills.
+
+2. **Resume Generation**: Upon clicking the "Generate Resume" button, the JavaScript code processes the input data and generates a formatted resume.
+
+3. **Resume Preview**: Users are then directed to the `resume.html` page, where they can view their completed resume in a professional layout.
+
+4. **Data Editing**: Users can click the "Edit" button to return to the `edit.html` page and make modifications to their resume data.
+
+5. **Data Persistence**: The application allows users to save their resume data locally, ensuring that their progress is not lost.
+
+## Usage
+The Resume Builder project is versatile and can be used for various purposes, including:
+
+- Crafting job application resumes.
+- Creating academic CVs.
+- Building professional profiles for personal websites.
+
+## Contributing
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the OSL -
+
+## Acknowledgments
+Special thanks to RS Sir for providing guide to this project.
+
+
+
+
